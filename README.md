@@ -214,6 +214,12 @@ Running this script will generate a plot comparing the ground truth data against
 Additionally, we provide a script that makes predictions without Volume and Amount data, which can be found in [`examples/prediction_wo_vol_example.py`](examples/prediction_wo_vol_example.py).
 
 
+## ES One-Minute Walk-Forward Runbook
+
+See the [ES one-minute runbook](docs/runbooks/KRONOS_ES_1MIN_WALK_FORWARD_RUNBOOK.md) for local setup, ES data preparation, fine-tuning, and weekly out-of-sample evaluation using a rolling 24-month development window.
+
+The guide distinguishes available commands from the ES adapter work required for reliable evaluation, including causal normalization, individual forecast paths, and pretrained-model provenance.
+
 ## 🔧 Finetuning on Your Own Data (A-Share Market Example)
 
 We provide a complete pipeline for finetuning Kronos on your own datasets. As an example, we demonstrate how to use [Qlib](https://github.com/microsoft/qlib) to prepare data from the Chinese A-share market and conduct a simple backtest.
